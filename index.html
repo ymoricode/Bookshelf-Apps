@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookshelf Apps</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Bookshelf Apps Dimas</h1>
+      <div class="bookshelves">
+        <div class="shelf" id="unfinished-shelf">
+          <h2>Belum Selesai Dibaca</h2>
+          <ul id="unfinished-books"></ul>
+        </div>
+        <div class="shelf" id="finished-shelf">
+          <h2>Selesai Dibaca</h2>
+          <ul id="finished-books"></ul>
+        </div>
+      </div>
+      <form id="book-form">
+        <input type="text" id="title" placeholder="Judul" required />
+        <input type="text" id="author" placeholder="Penulis" required />
+        <input type="number" id="year" placeholder="Tahun" required />
+        <label for="isComplete">Selesai dibaca?</label>
+        <input type="checkbox" id="isComplete" />
+        <button type="submit">Tambahkan Buku</button>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
